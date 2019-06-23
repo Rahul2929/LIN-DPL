@@ -1,0 +1,15 @@
+---
+- name: __add epel-repo__
+  yum_repository:
+    name: epel
+    description: EPEL Repo
+    mirrorlist: https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch
+    enabled: 1
+    gpgcheck: 0
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+- name: __add centos-release-repo__
+  yum: pkg={{item}} state=present
+  with_items:
+   - centos-release-scl
+

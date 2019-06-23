@@ -1,0 +1,4 @@
+---
+- import_tasks: ssh_config.yml
+- import_tasks: install-yum-packages.yml
+- import_tasks: create-jenkins-root.yml

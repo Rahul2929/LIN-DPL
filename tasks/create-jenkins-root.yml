@@ -1,0 +1,9 @@
+---
+
+- name: __configure jenkins slave__
+  file: 
+    path: /jenkins
+    state: directory
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}" 
+    mode: u=rwx,g=rwx,o=rwx

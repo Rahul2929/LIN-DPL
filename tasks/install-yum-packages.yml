@@ -1,0 +1,9 @@
+---
+- name: __install dependencies__
+  yum: pkg={{item}} state=present
+  become: true
+  with_items:
+   - git
+   - dos2unix
+   - java-1.8.0-openjdk-devel
+  
