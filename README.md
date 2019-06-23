@@ -9,7 +9,7 @@ public key to be present (id_rsa.pub) at user .ssh directory
 
 Role Variables
 --------------
-ansible_user : < Remote machine username >
+ansible_user : < Remote Machine Uername >
 
 Example Playbook
 ----------------
