@@ -9,12 +9,13 @@ public key to be present (id_rsa.pub) at user .ssh directory
 
 Role Variables
 --------------
-ansible_user : <Remote machine username> 
+ansible_user : < Remote machine username >
 
 Example Playbook
 ----------------
 Example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
 - hosts: LIN-DPL
+  
   roles:
   - role: LIN-DPL
